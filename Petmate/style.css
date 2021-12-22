@@ -1,0 +1,499 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-height: 450px) {
+  html .mobile-header .hidden-lg .sidenav,
+  body .mobile-header .hidden-lg .sidenav {
+    padding-top: 15px;
+  }
+  html .mobile-header .hidden-lg .sidenav a,
+  body .mobile-header .hidden-lg .sidenav a {
+    font-size: 18px;
+  }
+}
+html .mobile-header .hidden-lg .sidenav,
+body .mobile-header .hidden-lg .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+html .mobile-header .hidden-lg .sidenav a,
+body .mobile-header .hidden-lg .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+html .mobile-header .hidden-lg .closebtn,
+body .mobile-header .hidden-lg .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+html .mobile-header .hidden-lg .bar-icon,
+body .mobile-header .hidden-lg .bar-icon {
+  margin-top: 11px;
+}
+html .mobile-header .header-pet,
+body .mobile-header .header-pet {
+  margin-top: 34px;
+  padding-bottom: 30px;
+}
+html .mobile-header .header-pet .mobile-logo,
+body .mobile-header .header-pet .mobile-logo {
+  display: block;
+}
+html .mobile-header .header-pet .mobile-logo #logo-id,
+body .mobile-header .header-pet .mobile-logo #logo-id {
+  padding-left: 7px;
+  max-width: 38%;
+}
+html .mobile-header .header-pet #arrow,
+body .mobile-header .header-pet #arrow {
+  height: 34px;
+  padding-top: 6px;
+}
+html .mobile-header .header-pet .cart,
+body .mobile-header .header-pet .cart {
+  font-size: 16px;
+}
+html .mobile-header .header-pet .searchIcon,
+body .mobile-header .header-pet .searchIcon {
+  position: absolute;
+  top: 35%;
+  z-index: 100;
+  left: 2.3%;
+  font-size: 16px;
+  margin: 0;
+  background: url(https://www.petmate.com/file/general/PetRedesignsearchIcon_grey.svg);
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+}
+html .mobile-header .header-pet #txtSearch,
+body .mobile-header .header-pet #txtSearch {
+  height: 48px;
+}
+html .mobile-header #nav-bg #nav-target ul li a,
+body .mobile-header #nav-bg #nav-target ul li a {
+  font-weight: 350;
+  font-size: 18px;
+  color: #3f3e3e;
+}
+html .mobile-header #nav-bg #nav-target ul li a:hover,
+body .mobile-header #nav-bg #nav-target ul li a:hover {
+  background: white;
+}
+html .mobile-header #nav-bg #nav-target ul li .nav-list,
+body .mobile-header #nav-bg #nav-target ul li .nav-list {
+  font-size: 14px;
+}
+html .mobile-header #nav-bg #nav-target ul li #text-red,
+body .mobile-header #nav-bg #nav-target ul li #text-red {
+  color: #f35353;
+}
+html .mobile-header #nav-bg #nav-target ul li ul li > a,
+body .mobile-header #nav-bg #nav-target ul li ul li > a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+html .mobile-header #nav-bg #nav-target ul ul,
+body .mobile-header #nav-bg #nav-target ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  padding: 0;
+}
+html .mobile-header #nav-bg #nav-target ul ul li,
+body .mobile-header #nav-bg #nav-target ul ul li {
+  float: none;
+  width: 300px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+html .mobile-header #nav-bg #nav-target ul ul a,
+body .mobile-header #nav-bg #nav-target ul ul a {
+  line-height: 120%;
+  padding: 5px 10px;
+}
+html .mobile-header #nav-bg #nav-target ul li:hover > ul,
+body .mobile-header #nav-bg #nav-target ul li:hover > ul {
+  display: block;
+  z-index: 1;
+  margin-left: 15px;
+}
+html .Box1,
+body .Box1 {
+  border: 0px solid white;
+}
+html .Box1 .Box,
+body .Box1 .Box {
+  border: 2px solid #ebdaeb;
+  background-color: rgba(252, 253, 228, 0.932);
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+html .Box1 .Box:hover,
+body .Box1 .Box:hover {
+  border-color: #030585;
+}
+html .card,
+body .card {
+  display: flex;
+  flex-direction: column;
+}
+html .rate,
+body .rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+html .rate:not(:checked) > input,
+body .rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+html .rate:not(:checked) > label,
+body .rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+html .rate:not(:checked) > label:before,
+body .rate:not(:checked) > label:before {
+  content: '★ ';
+}
+html .rate > input:checked ~ label,
+body .rate > input:checked ~ label {
+  color: #0d279c;
+}
+html .rate:not(:checked) > label:hover,
+body .rate:not(:checked) > label:hover,
+html .rate:not(:checked) > label:hover ~ label,
+body .rate:not(:checked) > label:hover ~ label {
+  color: #0d279c;
+}
+html .rate > input:checked + label:hover,
+body .rate > input:checked + label:hover,
+html .rate > input:checked + label:hover ~ label,
+body .rate > input:checked + label:hover ~ label,
+html .rate > input:checked ~ label:hover,
+body .rate > input:checked ~ label:hover,
+html .rate > input:checked ~ label:hover ~ label,
+body .rate > input:checked ~ label:hover ~ label,
+html .rate > label:hover ~ input:checked ~ label,
+body .rate > label:hover ~ input:checked ~ label {
+  color: #0d279c;
+}
+html .partition,
+body .partition {
+  margin-top: 100px;
+  font-family: sans-serif;
+}
+html .partition .heading1,
+body .partition .heading1 {
+  color: #000;
+  font-size: 46px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  line-height: 46px;
+  font-weight: 400;
+}
+html .partition .heading2,
+body .partition .heading2 {
+  color: #000;
+  text-align: center;
+  font-size: 46px;
+  font-weight: 200;
+  letter-spacing: 0.2px;
+  line-height: 50.6px;
+  margin-bottom: 10px;
+}
+html .partition .content,
+body .partition .content {
+  color: #000;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 26px 24%;
+  font-style: inherit;
+  text-decoration: inherit;
+}
+html .partition .crd:hover,
+body .partition .crd:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 480px) {
+  html .partition .categoryTable,
+  body .partition .categoryTable {
+    position: static;
+    display: block;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html .partition .title-txt,
+  body .partition .title-txt {
+    font-size: 34px;
+    line-height: 42px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html .partition thead tr td,
+  body .partition thead tr td {
+    font-size: 14px;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html .partition tbody tr td a,
+  body .partition tbody tr td a {
+    font-size: 10px;
+    padding: 5px 0;
+  }
+}
+html .partition .display-name a,
+body .partition .display-name a {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+html .partition .display-name,
+body .partition .display-name {
+  padding: 15px 0;
+}
+html .partition table,
+body .partition table {
+  max-width: 100%;
+  min-width: 0;
+}
+html .partition #tableHead,
+body .partition #tableHead {
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+html .partition thead tr td,
+body .partition thead tr td {
+  font-weight: 600;
+  height: 100%;
+  text-transform: capitalize;
+  font-size: 21px;
+  text-decoration: none;
+  line-height: 30x;
+  color: #000;
+  letter-spacing: 0.02rem;
+  padding: 8px;
+  vertical-align: top;
+}
+html .partition tbody tr td,
+body .partition tbody tr td {
+  padding: 8px;
+  line-height: 1.43;
+  vertical-align: top;
+}
+html .partition td a,
+body .partition td a {
+  color: #000;
+}
+html #perks,
+body #perks {
+  text-align: center;
+}
+html #perks .Perk,
+body #perks .Perk {
+  font-size: 46px;
+  line-height: 62px;
+  color: black;
+  font-weight: 100;
+  margin: 0 !important;
+  font-family: 'Nunito', sans-serif;
+}
+html #perks .heading,
+body #perks .heading {
+  font-size: 18px !important;
+  word-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+}
+html #perks .unsubscribe,
+body #perks .unsubscribe {
+  line-height: 8px;
+}
+html #perks #message,
+body #perks #message {
+  color: red;
+}
+html .footer,
+body .footer {
+  margin-top: 50px;
+  padding: 60px 0;
+  width: 100%;
+  background: #2654bf;
+  color: #f5fafd;
+}
+html .footer .footer-heading,
+body .footer .footer-heading {
+  position: relative;
+  color: #f5fafd;
+  font-size: 15px;
+  line-height: 15.83px;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+}
+html .footer .footer-li a,
+body .footer .footer-li a {
+  padding: 10px 0;
+  color: #98c1ff;
+  display: block;
+  transition: color 0.5s ease-in-out;
+  text-decoration: none;
+  line-height: 1.5rem;
+  border: none;
+}
+html .footer .footer-li a:hover,
+body .footer .footer-li a:hover {
+  color: #f5fafd;
+}
+@media screen and (max-width: 990px) {
+  html .footer .col-md-2,
+  body .footer .col-md-2 {
+    text-align: justify;
+  }
+  html .footer .footer-li a,
+  body .footer .footer-li a {
+    border-bottom: 1px solid black;
+  }
+}
+@media screen and (max-width: 990px) {
+  html .footer .footer-heading,
+  body .footer .footer-heading {
+    padding: 20px;
+  }
+}
+html .footer .fa-plus,
+body .footer .fa-plus {
+  float: right;
+  display: none;
+}
+html .footer .footer-li,
+body .footer .footer-li {
+  display: none;
+}
+@media screen and (min-width: 990px) {
+  html .footer #shopby,
+  body .footer #shopby {
+    display: block;
+  }
+  html .footer #Account,
+  body .footer #Account {
+    display: block;
+  }
+  html .footer #Support,
+  body .footer #Support {
+    display: block;
+  }
+  html .footer #Company,
+  body .footer #Company {
+    display: block;
+  }
+  html .footer .footer-li,
+  body .footer .footer-li {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  html .footer .fa-plus,
+  body .footer .fa-plus {
+    display: block;
+  }
+}
+html .footer #myBtn,
+body .footer #myBtn {
+  margin-left: 10px;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #00112f;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 0%;
+  opacity: 0.3;
+}
+html .footer #myBtn:hover,
+body .footer #myBtn:hover {
+  background-color: #555;
+}
+html .footer .logo,
+body .footer .logo {
+  margin-left: 130px;
+  padding-bottom: 5px;
+}
+html .footer .social-icons,
+body .footer .social-icons {
+  margin-top: 60px;
+}
+html .footer .icons,
+body .footer .icons {
+  margin-left: 70px;
+}
+html .footer .icons a,
+body .footer .icons a {
+  text-decoration: none;
+  font-size: 22px;
+  margin: 10px;
+  color: #f4f4f4;
+}
+html .footer .icons a:hover,
+body .footer .icons a:hover {
+  color: lightgray;
+}
+html .footer .follow,
+body .footer .follow {
+  margin-left: 130px;
+}
+html .footer .item,
+body .footer .item {
+  font-size: 11px;
+  color: #99c2ff;
+  font-family: 'Roboto', sans-serif;
+}
+html .footer .item:hover,
+body .footer .item:hover {
+  text-decoration: none;
+  color: white;
+}

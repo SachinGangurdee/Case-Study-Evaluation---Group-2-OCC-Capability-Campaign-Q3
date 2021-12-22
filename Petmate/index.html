@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <!-- bootstrap Library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- Jquery Library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Javascript Library -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- External css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap"
+        rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://bennettfeely.com/ztext/js/ztext.min.js"></script>
+    <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--For footer-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https ://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css"></script>
+    <!--Linking External CSS-->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!-- Javascript file -->
+    <script src="js/main.js"></script>
+    <title>Petmate Brand Official Website</title>
+</head>
+
+<body>
+    <!--Header of Webpage (Saranya G - 88427)-->
+    <!--===================================================-->
+    <!-- Header section for mobile -->
+    <div class="mobile-header">
+        <div class="hidden-lg">
+
+            <!-- Animated Sidenav -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="ipad-bar">&times;</a>
+                <span><a class="mobilemenu-login" id="bobile-sign-in">Sign In or Register</a></span>
+                <a href="#">Dogs</a>
+                <a href="#">Cats</a>
+                <a href="#">Birds & Small Pets</a>
+                <a href="#">Brands</a>
+                <a href="#">Education</a>
+                <a href="#">Careers</a>
+                <a href="#">Adapt A Pet</a>
+                <a href="#">Sign Up & Save</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <!-- bar icon -->
+            <span class="col-xs-3 bar-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+            <!-- Logo -->
+            <div class="col-xs-6 text-center ">
+                <a href="#"><img src="image\pet-logo.png" alt="petmate logo" class="text-center bar-icon"
+                        id="logo-mobile"></a>
+            </div>
+            <!-- cart section -->
+            <div class="col-xs-3 text-right bar-icon">
+                <div class="heading-cart cart-wrapper">
+                    <img src="https://www.petmate.com/file/general/Cart_16x16.svg" alt="cart-logo" id="ipad-cart">
+                </div>
+            </div>
+            <!--Search bar-->
+
+            <div class="col-xs-12 pull-right input-group search">
+                <div class="main">
+
+                    <!-- Actual search box -->
+                    <div class="form-group has-feedback has-search">
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Desktop header part -->
+        <div class="row header-pet">
+            <!-- Petmate Logo -->
+            <div class="col-md-4 hidden-xs hidden-md hidden-sm mobile-logo logo-wrapper" id="logo">
+                <a href="#"><img src="image\pet-logo.png" alt="petmate logo" class="img-responsive" id="logo-id"></a>
+            </div>
+
+            <!-- Search bar -->
+            <div class="col-md-6 hidden-xs hidden-md hidden-sm">
+                <div class="input-group">
+                    <span class="searchIcon"></span>
+                    <input type="text" class="form-control" placeholder="     Search pet products & education"
+                        id="txtSearch" />
+                    <div class="input-group-btn  hidden-xs">
+                        <button class="btn btn-primary" type="submit">
+                            <span class="glyphicon glyphicon-arrow-right" id="arrow"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart section -->
+            <div class="col-md-1 hidden-xs hidden-md hidden-sm">
+                <div class="heading-cart cart-wrapper">
+                    <span class="cart"> 0 Items <img src="https://www.petmate.com/file/general/Cart_16x16.svg"
+                            alt="cart-logo">
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar creation -->
+        <nav id="nav-bg">
+            <div class="navbar-collapse hidden-xs hidden-md hidden-sm" id="nav-target">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Dogs</a>
+                        <ul>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Gift Guides</a> </li>
+                            <li><a href="#">Apparel</a> </li>
+                            <li><a href="#">Goodie Box</a> </li>
+                            <li><a href="#">Pet Steps & Ramps</a> </li>
+                            <li><a href="#">Training Tools</a> </li>
+                            <li><a href="#">Bedding</a> </li>
+                            <li><a href="#">Blankets</a> </li>
+                            <li><a href="#">Elevated Beds</a> </li>
+                            <li><a href="#">Furniture</a> </li>
+                            <li><a href="#">Kennel Mats</a> </li>
+                            <li><a href="#">Lounger Beds</a> </li>
+                            <li><a href="#">Orthopedic Beds</a> </li>
+                            <li><a href="#">Outdoor Beds</a> </li>
+                            <li><a href="#">Pillow Beds</a> </li>
+                            <li><a href="#">Shaped & Bolster Beds</a> </li>
+                            <li><a href="#">Collars & Leashes</a> </li>
+                            <li><a href="#">Collars</a> </li>
+                            <li><a href="#">Harnesses</a> </li>
+                            <li><a href="#">Leads</a> </li>
+                            <li><a href="#">Leashes</a> </li>
+                            <li><a href="#">Retractables</a> </li>
+                            <li><a href="#">Tieouts & Cables</a> </li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#">Cats</a>
+                        <ul>
+                            <li><a href="#">Gift Guides</a></li>
+                            <li><a href="#">Accessoriess</a> </li>
+                            <li><a href="#">Catnip</a> </li>
+                            <li><a href="#">Goodie Box</a> </li>
+                            <li><a href="#"> Bedding</a> </li>
+                            <li><a href="#">Bolster Beds</a> </li>
+                            <li><a href="#">Cave Beds</a> </li>
+                            <li><a href="#">Kennel Mats</a> </li>
+                            <li><a href="#">Lounger Beds</a> </li>
+                            <li><a href="#">Orthopedic Beds</a> </li>
+                            <li><a href="#"> Collars & Leashes</a> </li>
+                            <li><a href="#">Collars</a> </li>
+                            <li><a href="#">Feeding & Watering</a> </li>
+                            <li><a href="#">Accessories</a> </li>
+                            <li><a href="#">Automatic Feeders</a> </li>
+                            <li><a href="#">Automatic Waterers</a> </li>
+                            <li><a href="#">Double Diners</a> </li>
+                            <li><a href="#">Food Storage</a> </li>
+                            <li><a href="#">Gravity Feeders</a> </li>
+                            <li><a href="#">Gravity Waterers</a> </li>
+                            <li><a href="#">Placemats</a> </li>
+                            <li><a href="#">Single Bowls</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Birds & Small Pets</a>
+                        <ul>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Bird Baths</a> </li>
+                            <li><a href="#">Bird Perches</a> </li>
+                            <li><a href="#">Bird Swings</a> </li>
+                            <li><a href="#">Fish Supplies</a> </li>
+                            <li><a href="#">Feeding & Watering</a> </li>
+                            <li><a href="#">Feeders</a> </li>
+                            <li><a href="#">Food Storage</a> </li>
+                            <li><a href="#">Waterers</a> </li>
+                            <li><a href="#">Shelter</a> </li>
+                            <li><a href="#">Chicken Coops</a> </li>
+                            <li><a href="#">Toys</a> </li>
+                            <li><a href="#">Interactive Toys</a> </li>
+                            <li><a href="#">Mirror Toys</a> </li>
+                            <li><a href="#">Solo Play Toys</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#" id="text-red">Sale Items</a></li>
+                    <li><a href="#">Adopt A Pet</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Sign Up & Save</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="nav-list">Help <img
+                                src="https://www.petmate.com/file/general/help_16x16.svg"></img></a></li>
+                    <li><a href="#" class="nav-list">My Account <img
+                                src="https://www.petmate.com/file/general/myaccount_16x16.svg"></img></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--Content Section-1 Starts here (Mohd Ebad - 88433)-->
+
+    <!--===================================================================-->
+    <!-- Carousel  Creation -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom: 3px;">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" style="margin-bottom: 5px;">
+            <div class="item active">
+                <img src="image/slide1.webp" alt="slide1" class="img-responsive">
+            </div>
+
+            <div class="item">
+                <img src="image/slide2.webp" alt="slide2" class="img-responsive">
+            </div>
+
+            <div class="item">
+                <img src="image/slide3.webp" alt="slide3" class="img-responsive">
+            </div>
+
+            <div class="item">
+                <img src="image/slide4.webp" alt="slide4" class="img-responsive">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!--Carousel Terminates here-->
+    <!--==================================================================================================-->
+    <!-- 3 Image designing -->
+    <div class="row" style="margin:0.5rem;">
+        <div class="col-sm-4 head-img" style="padding-right: 3px; padding-bottom: 3px;">
+            <img src="image/image1.jpg" alt="pic1" class="img-responsive">
+        </div>
+        <div class="col-sm-4 head-img" style="padding-right: 3px; padding-bottom: 3px;">
+            <img src="image/image2.jpg" alt="pic2" class="img-responsive">
+        </div>
+        <div class="col-sm-4">
+            <img src="image/image3.webp" alt="pic3" class="img-responsive">
+        </div>
+    </div>
+    <!-- ============================ -->
+
+    <!-- Container Brand -->
+    <div class="container-fluid">
+        <div class="Box1">
+            <div class="row" style="margin-bottom: 2rem;">
+                <div class="col-sm-9 col-xs-12">
+                    <h2>Our Brands</h2>
+                </div>
+                <div class="col-sm-3 col-xs-12" style="font-family: Arial, Helvetica, sans-serif;">
+                    <h4 style="margin-top: 35px; margin-left: 2rem; color: rgb(9, 9, 129);" href="#">SHOP ALL BRANDS
+                        <img src="image/back-arrow.png"> <img src="image/right-arrow.png">
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="image/img1.png" class="img-responsive Box" alt="Responsive image" style="padding: 2.5rem;
+                margin-bottom: 1.5rem;">
+                </div>
+                <div class="col-sm-2 ">
+                    <img src="image/img2.png" class="img-responsive Box" alt="Responsive image" style="padding: 2.5rem; padding-bottom: 1.9rem;
+                margin-bottom: 1.5rem;">
+                </div>
+                <div class="col-sm-2 ">
+                    <img src="image/img3.png" class="img-responsive Box" alt="Responsive image" style="padding: 2.5rem;
+                margin-bottom: 1.5rem;">
+                </div>
+                <div class="col-sm-2 ">
+                    <img src="image/img4.png" class="img-responsive Box" alt="Responsive image" style="padding: 2.5rem;
+                margin-bottom: 1.5rem;">
+                </div>
+                <div class="col-sm-2 visible-lg">
+                    <img src="image/img5.png" class="img-responsive Box" alt="Responsive image" style="padding: 2.5rem;
+                margin-bottom: 1.5rem;">
+                </div>
+                <div class="col-sm-2 visible-lg">
+                    <img src="image/MicrosoftTeams-image.png" class="img-responsive Box" alt="Responsive image" style="padding: 2.5rem;
+                margin-bottom: 1.5rem;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=============================================================================================================-->
+    <div class="container-fluid" style="margin-top: 5rem;">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12">
+                <h1 style="text-align: center; text-shadow: 2px 3px 5px #9C9C9C;">Petmate Picks</h1>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 5rem;">
+            <div class="col-sm-11 col-xs-6"></div>
+            <div class="col-sm-1 col-xs-6">
+                <img src="image/back-arrow.png"> &nbsp; <img src="image/right-arrow.png">
+            </div>
+        </div>
+        <div class="row container-fluid">
+            <div class="col-sm-2">
+                <div class="card" style="width: 17rem; margin-left: 4.5rem;">
+                    <img src="image/pic1.png" class="card-img-top" style="padding: 2.5rem;
+                        margin-bottom: 1.5rem;">
+                    <div class="card-body">
+                        <span class="badge badge-primary col-sm-12 col-xs-12 col-md-12 col-lg-12 card-title"
+                            style="padding: 1rem; background-color: blue; color: white; margin-left: 5rem; margin-right: 10rem; width: 5rem;">New</span>
+                        <p style="text-align: center;"><b>$19.99</b></p>
+                        <p class="card-text">Zoobilee Reindeer Holiday Heggies Dog Toy.</p>
+                        <div class="row">
+                            <div class="rate">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card" style="width: 17rem; margin-left: 5rem;">
+                    <img src="image/pic2.png" class="card-img-top" style="padding: 2.5rem;
+                        margin-bottom: 1.5rem;">
+                    <div class="card-body">
+                        <span class="badge badge-primary col-sm-12 col-xs-12 col-md-12 col-lg-12 card-title"
+                            style="padding: 1rem; background-color: blue; color: white; margin-left: 5rem; margin-right: 10rem; width: 5rem;">New</span>
+                        <p style="text-align: center;"><b>$19.99</b></p>
+                        <p class="card-text">Zoobilee Reindeer Holiday Heggies Dog Toy.</p>
+                        <div class="row">
+                            <div class="rate">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card" style="width: 17rem; margin-left: 5rem;">
+                    <img src="image/pic3.png" class="card-img-top" style="padding: 2.5rem;
+                        margin-bottom: 1.5rem;">
+                    <div class="card-body">
+                        <span class="badge badge-primary col-sm-12 col-xs-12 col-md-12 col-lg-12 card-title"
+                            style="padding: 1rem; background-color: blue; color: white; margin-left: 5rem; margin-right: 10rem; width: 5rem;">New</span>
+                        <p style="text-align: center;"><b>$19.99</b></p>
+                        <p class="card-text">Zoobilee Reindeer Holiday Heggies Dog Toy.</p>
+                        <div class="row">
+                            <div class="rate">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card" style="width: 17rem; margin-left: 5rem;">
+                    <img src="image/pic4.png" class="card-img-top" style="padding: 2.5rem;
+                        margin-bottom: 1.5rem;">
+                    <div class="card-body">
+                        <span class="badge badge-primary col-sm-12 col-xs-12 col-md-12 col-lg-12 card-title"
+                            style="padding: 1rem; background-color: blue; color: white; margin-left: 5rem; margin-right: 10rem; width: 5rem;">New</span>
+                        <p style="text-align: center;"><b>$19.99</b></p>
+                        <p class="card-text">Zoobilee Reindeer Holiday Heggies Dog Toy.</p>
+                        <div class="row">
+                            <div class="rate">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card" style="width: 17rem; margin-left: 5rem;">
+                    <img src="image/pic5.png" class="card-img-top" style="padding: 2.5rem;
+                        margin-bottom: 1.5rem;">
+                    <div class="card-body">
+                        <span class="badge badge-primary col-sm-12 col-xs-12 col-md-12 col-lg-12 card-title"
+                            style="padding: 1rem; background-color: blue; color: white; margin-left: 5rem; margin-right: 10rem; width: 5rem;">New</span>
+                        <p style="text-align: center;"><b>$19.99</b></p>
+                        <p class="card-text">Zoobilee Reindeer Holiday Heggies Dog Toy.</p>
+                        <div class="row">
+                            <div class="rate">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card" style="width: 17rem; margin-left: 5rem;">
+                    <img src="image/pic6.png" class="card-img-top" style="padding: 2.5rem;
+                        margin-bottom: 1.5rem;">
+                    <div class="card-body">
+                        <span class="badge badge-primary col-sm-12 col-xs-12 col-md-12 col-lg-12 card-title"
+                            style="padding: 1rem; background-color: blue; color: white; margin-left: 5rem; margin-right: 10rem; width: 5rem;">New</span>
+                        <p style="text-align: center;"><b>$19.99</b></p>
+                        <p class="card-text">Zoobilee Reindeer Holiday Heggies Dog Toy.</p>
+                        <div class="row">
+                            <div class="rate">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Content Section 2 starts here (Sachin Gangurde - 15153)-->
+    <!--=======================================================-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="partition">
+                <div class="desktopView hidden-sm hidden-xs">
+                    <a href="#">
+                        <img src="image/PM1.jpg" class="img-responsive" alt="Our Story" title="Our Story">
+                    </a>
+                </div>
+                <div class="mobileView visible-xs visible-sm">
+                    <div>
+                        <a href="#">
+                            <img src="image/OurStoryMobile_L.webp" class="img-responsive" alt="Our Story"
+                                title="Our Story">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="image/OurStoryMobile_R.webp" class="img-responsive" alt="Our Story"
+                                title="Our Story">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partition">
+                <h2 class="heading1 text-center" style="text-shadow: 5px 3px 5px #9C9C9C;">Canine Know-How. Feline
+                    Facts.
+                </h2>
+                <p class="heading2 text-center" style="text-shadow: 5px 3px 5px #9C9C9C;">All-Around Pet Answers.</p>
+                <p class="content text-center">When your dog won't stop whining or your cat won't stop scratching, find
+                    the
+                    right answers that will put your mind (and your heart) at ease.</p>
+                <div class="col-sm-12 col-xs-12 padding-length">
+
+                    <!--Image1-->
+
+                    <div class="col-sm-3 col-md-3 col-xs-12">
+                        <a href="#">
+                            <div id="img_wrapper" class="crd">
+                                <img class="img-responsive" alt="Car Sickness In Dogs: Causes, Symptoms, & Treatments"
+                                    title="Car Sickness In Dogs: Causes, Symptoms, & Treatments"
+                                    src="image/white-dog-car.webp">
+                            </div>
+                            <span alt="Car Sickness In Dogs: Causes, Symptoms, & Treatments"
+                                title="Car Sickness In Dogs: Causes, Symptoms, & Treatments"></span>
+                        </a>
+                        <div class="display-name"><a alt="displayName" href="#">Car Sickness In Dogs: Causes, Symptoms,
+                                &
+                                Treatments</a></div>
+                    </div>
+
+                    <!--Image2-->
+                    <div class="col-sm-3 col-md-3 col-xs-12">
+
+                        <a href="#">
+                            <div id="img__wrapper" class="crd">
+                                <img class="img-responsive" alt="Do Cats Love Humans?" title="Do Cats Love Humans?"
+                                    src="image/brown-cat.webp">
+                            </div>
+                            <span alt="Do Cats Love Humans?" title="Do Cats Love Humans?"></span>
+                        </a>
+                        <div class="display-name"><a alt="displayName" href="#">Do Cats Love Humans?</a></div>
+                    </div>
+
+                    <!--Image3-->
+                    <div class="col-sm-3 col-md-3 col-xs-12">
+                        <a href="#">
+                            <div id="img_wrapper" class="crd"><img class="img-responsive"
+                                    alt="How to Prepare Your Pet for Post-Pandemic Return To Work"
+                                    title="How to Prepare Your Pet for Post-Pandemic Return To Work"
+                                    src="image/dogs-cat.webp"></div>
+                            <span alt="How to Prepare Your Pet for Post-Pandemic Return To Work"
+                                title="How to Prepare Your Pet for Post-Pandemic Return To Work"></span>
+                        </a>
+                        <div class="display-name"><a alt="displayName" href="#">How to Prepare Your Pet for
+                                Post-Pandemic
+                                Return To Work</a></div>
+                    </div>
+
+                    <!--Image4-->
+                    <div class="col-sm-3 col-md-3 col-xs-12">
+                        <a href="#">
+                            <div id="img__wrapper" class="crd">
+                                <img class="img-responsive" alt="Properly Storing Dry Pet Food"
+                                    title="Properly Storing Dry Pet Food" src="image/brown-dog.webp">
+                            </div>
+                            <span alt="Properly Storing Dry Pet Food"
+                                title="Properly Storing Dry Pet Food"></span>
+                        </a>
+                        <div class="display-name">
+                            <a alt="displayName" href="#">Properly Storing Dry Pet Food</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="partition">
+                <div align="center">
+                    <table class="categoryTable">
+                        <caption id="tableHead">Shop Our Popular Categories</caption>
+                        <thead>
+                            <tr>
+                                <td>Dogs</td>
+                                <td>Cats</td>
+                                <td>Replacement Parts</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#">Dog Accessories</a>
+                                </td>
+                                <td><a href="#">Accessories For Cats</a></td>
+                                <td><a href="#">All Replacement Parts</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#">Dog Bedding</a></td>
+                                <td><a href="#">Cat Beds</a></td>
+                                <td><a href="#">Feeding & Watering Replacement Parts</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#">Dog Collars & Leashes</a></td>
+                                <td><a href="#">Cat Collars & Leashes</a></td>
+                                <td><a href="#">Kennel & Carrier Replacement Parts</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#">Feeding & Watering</a></td>
+                                <td><a href="#">Feeding & Watering For Cats</a></td>
+                                <td><a href="#">Litter Pan Replacement Parts</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#">Grooming Accessories For Dogs</a></td>
+                                <td><a href="#">Cat Grooming Supplies</a></td>
+                                <td><a href="#">Shelter Replacement Parts</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#">Dog Kennels</a></td>
+                                <td><a href="#">Cat Kennels & Carriers</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#">Shelters For Dogs</a></td>
+                                <td><a href="#">Top Cat Shelters</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#">Popular Dog Toys</a></td>
+                                <td><a href="#">Cat Toys</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#">Travel Accessories For Dog Owners</a></td>
+                                <td><a href="#">Travel Accessories For Cat Owners</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!--===================================================================================================-->
+    <!--Footer Section Starts here (Shakshi singh - 88438)-->
+
+    <div class="container-fluid">
+        <div class="row">
+          <div id="perks" class="col-sm-12">
+            <h3 class="Perk">Petmate Perks</h3>
+            <p class="heading"> Sign up for our list to be the first to receive awesome deals and pet parent tips*.</p>
+    <br>
+    
+            <div class="form-input">
+              <input type="text" name="email "  id="emailCheck" placeholder="Email"  />
+    
+              <button id="btn" onclick="myFun()">Submit</button> <br><br>
+              
+              <p id="message"></p>
+              <p>Your email will be entered into the Petmate mailing list.</p>
+              <p class="unsubscribe">you may unsubscribe at any time.</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    
+    
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+    
+            <footer class="footer">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-2 m-b-30">
+                    <div class="footer-heading m-t-5 m-b-20 p-b-8 ">Shop By <i class="fa fa-plus" onclick="shopOpen()"
+                        ondblclick="shopClose()"></i></div>
+    
+                    <div class="footer-li" id="shopby">
+                      <a href="#"> Dogs </a>
+                      <a href="#"> Cats</a>
+                      <a href="#"> Birds </a>
+                      <a href="#"> Replacement Parts </a>
+                      <a href="#"> Brands</a>
+                      <a href="#"> Gift guides </a>
+                    </div>
+                  </div>
+                  <div class="col-md-2 m-b-30">
+                    <div class="footer-heading m-t-5 m-b-20 p-b-8">
+                      Support<i class="fa fa-plus" onclick="suppOpen()" ondblclick="suppClose()"></i>
+                    </div>
+                    <div class="footer-li" id="Support">
+                      <a href="#"> Contact Us </a>
+                      <a href="#"> Where To Buy</a>
+                      <a href="#"> Return policy </a>
+                      <a href="#"> Shopping policy </a>
+                      <a href="#"> Map policy </a>
+                      <a href="#"> Shopping policy </a>
+                      <a href="#"> International Shipping </a>
+                      <a href="#"> FAQS </a>
+                      <a href="#"> Site Map </a>
+                    </div>
+                  </div>
+                  <div class="col-md-2 m-b-30">
+                    <div class="footer-heading m-t-5 m-b-20 p-b-8">Company<i class="fa fa-plus" onclick="compOpen()"
+                        ondblclick="compClose()"></i></div>
+                    <div class="footer-li" id="Company">
+                      <a href="#"> Our Story </a>
+                      <a href="#"> Careers </a>
+                      <a href="#"> Affiliates </a>
+                      <a href="#">Media</a>
+                      <a href="#">Adopt A Pet</a>
+                      <a href="#">Corporate Sustainability</a>
+                    </div>
+    
+                  </div>
+                  <div class="col-md-2 m-b-30">
+                    <div class="footer-heading m-t-5 m-b-20 p-b-8">Account<i class="fa fa-plus" onclick="AccOpen()"
+                        ondblclick="AccClose()"></i></div>
+                    <div class="footer-li" id="Account">
+                      <a href="#"> Login </a>
+                      <a href="#"> Create Account </a>
+                      <a href="#"> Order Status </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 m-b-30">
+                    <div class="p-5"><img class="logo" src="image/download.png" alt=""></div>
+    
+                    <div class="social-icon container">
+                      <h4 class="follow">Follow Petmate</h4>
+                      <div class="icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                      </div>
+                    </div>
+                    <section>
+                      <button onclick="topFunction()" id="myBtn" title="Go to top"><i
+                          class="fas fa-level-up-alt"></i></button>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="container-fluid">
+                <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  <p><a class="item" href="#">Privacy Policy</a></p>
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  <p><a class="item" href="#">Terms Of Use</a></p>
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  <p><a class="item" href="#">Accessibility Statement</a></p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                  <h6 class="bottom"><strong>© 2021 Doskocil Manufacturing Company, Inc. dba Petmate</strong></h6>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      </footer>
+    <script src="jquery.js"></script>
+</body>
+
+</html>

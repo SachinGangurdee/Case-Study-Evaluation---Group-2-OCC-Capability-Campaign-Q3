@@ -1,0 +1,467 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: 'Roboto',sans-serif;
+
+
+.mobile-header{
+  .hidden-lg{
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color:white;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      .sidenav a{
+        padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+      }
+
+      .closebtn{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      .bar-icon{
+        margin-top: 11px;
+    }
+  }
+  .header-pet{
+    margin-top: 34px;
+    padding-bottom : 30px;
+    .mobile-logo {
+        display: block;
+        #logo-id{
+            padding-left: 7px;
+            max-width: 38%;
+        }
+    }
+    #arrow{
+        height: 34px;
+        padding-top: 6px;
+    }
+    .cart{
+        font-size: 16px;;
+    }
+    .searchIcon {
+        position: absolute;
+        top: 35%;
+        z-index: 100;
+        left: 2.3%;
+        font-size: 16px;
+        margin: 0;
+        background: url(https://www.petmate.com/file/general/PetRedesignsearchIcon_grey.svg);
+        width: 15px;
+        height: 15px;
+        background-repeat: no-repeat;
+    }
+    #txtSearch{
+        height: 48px;
+    }
+}
+#nav-bg{
+    #nav-target{
+        ul li a{
+            font-weight: 350;
+            font-size: 18px;
+            color: rgb(63, 62, 62);
+        }
+        ul li a:hover{
+            background: white;
+        }
+        ul li .nav-list{
+            font-size: 14px;
+        }
+        ul li #text-red{
+            color: rgb(243, 83, 83);
+        }
+        ul li ul li > a{
+            color: black;
+            text-decoration: none;
+            font-size: 16px;  
+        }
+        ul ul{
+            display:none;
+            position:absolute;
+            top:100%;
+            left:0;
+            background:white;
+            padding:0;
+        }
+        ul ul li
+                {
+                float:none;
+                width:300px;
+                margin-left: 25px;
+                margin-bottom: 10px;
+                list-style-type: none;
+              }
+        ul ul a{
+            line-height:120%;
+            padding:5px 10px;
+        }
+        ul li:hover > ul{
+            display:block;
+            z-index: 1;
+            margin-left: 15px;
+        }
+       
+    }
+}
+}
+  .Box1{
+    border: 0px solid white;
+    .Box{
+        border: 2px solid rgb(235, 218, 235);
+        background-color: rgba(252, 253, 228, 0.932);
+        box-shadow:
+                2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+                100px 100px 80px rgba(0, 0, 0, 0.07);
+    }
+    .Box:hover {
+        border-color: rgb(3, 5, 133);
+    }
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #0d279c;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #0d279c;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #0d279c;
+}
+.partition{
+    margin-top: 100px;
+    font-family: sans-serif;
+    .heading1{
+        color: #000;
+        font-size: 46px;
+        letter-spacing: 0.2px;
+        text-align: center;
+        line-height: 46px;
+        font-weight: 400;
+    }
+    .heading2{
+        color: #000;
+        text-align: center;
+        font-size: 46px;
+        font-weight: 200;
+        letter-spacing: 0.2px;
+        line-height: 50.6px;
+        margin-bottom: 10px;
+    }
+    .content{
+        color: #000;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 15px;
+        padding: 26px 24%;
+        font-style: inherit;
+        text-decoration: inherit;
+    }
+    .crd:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+@media only screen and (max-width: 480px) {
+    .categoryTable {
+        position: static;
+        display: block;
+        
+    }
+}
+
+@media only screen and (max-width:480px) {
+ .title-txt{
+     font-size: 34px;
+     line-height: 42px;
+ }   
+}
+@media only screen and (max-width:480px) {
+    thead tr td{
+        font-size: 14px;
+        padding: 0;
+    }   
+   }
+
+@media only screen and (max-width:480px) {
+    tbody tr td a{
+        font-size: 10px;
+    padding: 5px 0;
+    }   
+   }
+    .display-name a{
+        color: #000;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    .display-name{
+        padding: 15px 0;
+    }
+    table{
+        max-width: 100%;
+        min-width: 0;
+    }
+    #tableHead{
+        font-size: 42px;
+        line-height: 50px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #000;
+    }
+    
+    
+    thead tr td{
+        font-weight: 600;
+        height: 100%;
+        text-transform: capitalize;
+        font-size: 21px;
+        text-decoration: none;
+        line-height: 30x;
+        color: #000;
+        letter-spacing: .02rem;
+        padding: 8px;
+        vertical-align: top;
+    }
+    tbody tr td {
+        padding: 8px;
+        line-height: 1.43;
+        vertical-align: top;
+    }
+    
+    td a{
+        color: #000;
+    }
+   
+}
+//Footer start//
+#perks {
+  text-align: center;
+
+  .Perk {
+    font-size: 46px;
+    line-height: 62px;
+    color: black;
+    font-weight: 100;
+    margin: 0 !important;
+    font-family: 'Nunito', sans-serif;
+
+  }
+
+  .heading {
+    font-size: 18px !important;
+    word-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+  .unsubscribe{
+    line-height: 8px;
+  }
+  #message{
+    color: red;
+  }
+}
+
+.footer{
+  margin-top: 50px;
+  padding: 60px 0;
+  width: 100%;
+  background: #2654bf;
+  color: #f5fafd;
+
+  .footer-heading {
+    position: relative;
+    color: #f5fafd;
+    font-size: 15px;
+    line-height: 15.83px;
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+  }
+  .footer-li a {
+    padding: 10px 0;
+    color: #98c1ff;
+    display: block;
+    transition: color 0.5s ease-in-out;
+    text-decoration: none;
+    line-height: 1.5rem;
+    border: none;
+  }
+  .footer-li a:hover {
+    color: #f5fafd;
+  }
+  
+  
+  
+   @media screen and (max-width: 990px) {
+      .col-md-2 {
+        text-align: justify;
+      }
+
+      .footer-li a {
+        border-bottom: 1px solid black;
+      }
+    }
+
+    @media screen and (max-width: 990px) {
+      .footer-heading {
+        padding: 20px;
+      }
+    }
+
+    .fa-plus {
+      float: right;
+      display: none;
+    }
+
+    .footer-li {
+      display: none;
+    }
+
+    @media screen and (min-width: 990px) {
+      #shopby{
+        display: block;
+      }
+
+      #Account {
+        display: block;
+      }
+
+      #Support {
+        display: block;
+      }
+
+      #Company {
+        display: block;
+      }
+
+      .footer-li {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      .fa-plus {
+        display: block;
+      }
+    }
+
+    #myBtn {
+      margin-left: 10px;
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #00112f;
+      color: white;
+      cursor: pointer;
+      padding: 8px;
+      width: 50px;
+      height: 50px;
+      border-radius: 0%;
+      opacity: .3;
+    }
+
+    #myBtn:hover {
+      background-color: #555;
+    }
+    .logo {
+      margin-left: 130px;
+      padding-bottom: 5px;
+    }
+    .social-icons {
+      margin-top: 60px;
+    }
+    .icons {
+   margin-left: 70px;
+    }
+
+    .icons a {
+      text-decoration: none;
+      font-size: 22px;
+      margin: 10px;
+      color: #f4f4f4;
+    }
+    .icons a:hover{
+      color: lightgray;
+    }
+    
+
+    .follow {
+      margin-left: 130px;
+    }
+    .item {
+      font-size: 11px;
+      color: #99c2ff;
+      font-family: 'Roboto', sans-serif;
+      }
+    .item:hover{
+      text-decoration: none;
+      color: white;
+    }
+}
+
+}
